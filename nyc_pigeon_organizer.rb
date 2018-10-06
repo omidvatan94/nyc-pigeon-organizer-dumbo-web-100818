@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
     hash.each do |attribute, array|
       array.each do |name|
         if !new_hash.has_key?(name)
-          new_hash[name] = {}h
+          new_hash[name] = {}
         end
 
         if !new_hash[name].has_key?(property)
@@ -20,5 +20,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  binding.pry
   new_hash
 end
